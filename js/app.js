@@ -26,4 +26,10 @@
             document.getElementById("form-happiness-output").style.color = "violet";
         }
     });
+    
+    let colourMeter = document.getElementById("form-colour");
+    colourMeter.addEventListener("input", function(event) {
+        document.getElementById("form-colour-output").textContent = this.value;
+        document.getElementById("form-colour-output").style.color = this.value;
+    });
 }());
