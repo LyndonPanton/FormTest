@@ -51,9 +51,15 @@ fieldset {
 
 footer {
     margin: 10px auto 0;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: lightblue;
     text-align: center;
+}
+
+footer span {
+    text-align: center;
+    float: none;
+    clear: none;
 }
 
 li {
