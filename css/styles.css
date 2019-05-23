@@ -49,6 +49,13 @@ fieldset {
     border-radius: 8px;
 }
 
+footer {
+    margin: 10px auto 0;
+    padding: 20px 0;
+    background-color: lightblue;
+    text-align: center;
+}
+
 li {
     flex: 1;
     border-left: 1px black solid;
