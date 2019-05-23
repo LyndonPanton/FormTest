@@ -1,0 +1,103 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: lightgreen;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset input, fieldset select {
+    display: inline-block;
+    float: right;
+    clear: right;
+    border: 1px orange solid;
+    border-radius: 6px;
+    width: 50%;
+    padding: 4px 0;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+label {
+    display: block;
+    padding: 15px 0;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px purple solid;
+    border-radius: 8px;
+}
+
+li {
+    flex: 1;
+    border-left: 1px black solid;
+    text-align: center;
+}
+
+output {
+    padding-left: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-style: italic;
+    color: marine;
+}
+
+span {
+    display: inline-block;
+    float: left;
+    clear: left;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+ul:last-child {
+    border-right: 1px black solid;
+}
+
+#form-submit {
+    display: block;
+    margin: 10px auto;
+    border: 1px blue solid;
+    border-radius: 8px;
+    width: 200px;
+    height: 70px;
+    background-color: red;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#form-submit:active {
+    border: 1px orange solid;
+    background-color: green;
+    color: white;
+}
