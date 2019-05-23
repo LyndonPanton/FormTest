@@ -95,6 +95,10 @@ ul:last-child {
     border-right: 1px black solid;
 }
 
+#form-happiness-output {
+    color: green;
+}
+
 #form-submit {
     display: block;
     margin: 10px auto;
