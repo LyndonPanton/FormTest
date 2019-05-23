@@ -1,0 +1,141 @@
+<!-- Activty 5.4 - New Input Types (HTML5 Coding Essentials and Best Practices) -->
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lyndon Panton" />
+    <meta name="description" content="A simple custom form with different input types" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Form</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+<body>
+    <header id="header">
+        <h1>Custom Form</h1>
+        <ul id="navbar" role="navigation">
+            <li class="navbar-item"><a href="#form-basic">Basic Info</a></li>
+            <li class="navbar-item"><a href="#form-personal">Personal Info</a></li>
+            <li class="navbar-item"><a href="#form-payment">Payment</a></li>
+            <li class="navbar-item"><a href="#form-finish">Finish</a></li>
+        </ul>
+    </header>
+    
+    <main id="main">
+        <form id="form" action="./form.php" method="POST">
+            <fieldset id="form-basic">
+                <legend>Basic Info</legend>
+                <label for="form-firstname">
+                    <span>First name:</span>
+                    <input id="form-firstname" type="text" name="form-firstname" placeholder="First Name"/>
+                </label>
+                <label for="form-lastname">
+                    <span>Last name:</span>
+                    <input id="form-lastname" type="text" name="form-lastname" placeholder="Last Name"/>
+                </label>
+                <label for="form-username">
+                    <span>Username:</span>
+                    <input id="form-username" type="text" name="form-username" placeholder="User Name"/>
+                </label>
+                <label for="form-email">
+                    <span>Email:</span>
+                    <input id="form-email" type="text" name="form-email" placeholder="Email"/>
+                </label>
+                <label for="form-password">
+                    <span>Password:</span>
+                    <input id="form-password" type="text" name="form-password" placeholder="Password"/>
+                </label>
+                <label for="form-password-confirm">
+                    <span>Confirm Password:</span>
+                    <input id="form-password-confirm" type="text" name="form-password-confirm" placeholder="Confirm Password"/>
+                </label>
+            </fieldset>
+            
+            <fieldset id="form-personal">
+                <legend>Personal Info</legend>
+                <label for="form-phone">
+                    <span>Phone Number:</span>
+                    <input id="form-phone" type="tele" name="form-phone" placeholder="Phone Number"/>
+                </label>
+                <label for="form-birth">
+                    <span>Date Of Birth:</span>
+                    <input id="form-birth" type="date" name="form-birth" placeholder="Date Of Birth"/>
+                </label>
+                <label for="form-residence">
+                    <span>Country of Residence:</span>
+                    <input id="form-residence" type="text" name="form-residence" placeholder="Country of Residence"/>
+                </label>
+                <label for="form-colour">
+                    <span>Favourite Color:</span>
+                    <input id="form-colour" type="color" name="form-colour" placeholder="Favourite Colour"/>
+                    <output id="form-colour-output">#000000</output>
+                </label>
+                <label for="form-happiness">
+                    <span>Happiness:</span>
+                    <input id="form-happiness" type="range" name="form-happiness" placeholder="Happiness" min="0" max="100" step="1" value="50" />
+                    <output id="form-happiness-output">50</output>
+                </label>
+            </fieldset>
+            
+            <fieldset id="form-payment">
+                <legend>Payment</legend>
+                <!-- card number -->
+                <!-- others... -->
+                <label for="card-type"><span>Card Type:</span>
+                    <select id="card-type">
+                        <option value="">Choose card type</option>
+                        <option value="american-express">American Express</option>
+                        <option value="diners-club">Diners Club</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="maestro">Maestro</option>
+                        <option value="visa-debit">Visa Debit</option>
+                        <option value="visa-electron">Visa Electron</option>
+                    </select>
+                </label>
+                <label for="security-code"><span>Security Code:</span>
+                    <input type="number" name="security-code" />
+                </label>
+                <label for="expiration-date"><span>Expiration Date:</span>
+                    <input type="month" name="expiration-date" />
+                </label>
+            </fieldset>
+            
+            <fieldset id="form-finish">
+                <legend>Finish</legend>
+                <fieldset>
+                    <legend>I would like to receive</legend>
+                    <label class="label-inline" for="newsletter"><span>Newsletter</span>
+                        <input type="checkbox" name="newsletter" value="newsletter" />
+                    </label>
+                    <label class="label-inline" for="promotions"><span>Promotions</span>
+                        <input type="checkbox" name="promotions" value="promotions" />
+                    </label>
+                    <label class="label-inline"  for="mail">
+                        <span>Mail</span>
+                        <input type="checkbox" name="mail" value="mail" />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>I would like to have my information validated by</legend>
+                    <label><span>Phone Call</span>
+                        <input type="radio" name="form-validate" value="form-validate-call" />
+                    </label>
+                    <label><span>Text Message</span>
+                        <input type="radio" name="form-validate" value="form-validate-message" />
+                    </label>
+                    <label><span>Email</span>
+                        <input type="radio" name="form-validate" value="form-validate-email" />
+                    </label>
+                </fieldset>
+                
+            </fieldset>
+            <input id="form-submit" type="submit" value="Register" />
+        </form>
+    </main>
+    
+    <footer id="footer">
+        <span id="copyright">&copy; <span id="copyright-year"></span> Lyndon Panton | All Rights Reserved</span>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
